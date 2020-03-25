@@ -15,7 +15,8 @@ public class Favorite {
 
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  private Long id;
+  @Column(name="book_id")
+  private Long bookId;
   
   private String title;
   private String author;
@@ -40,7 +41,7 @@ public class Favorite {
   }
 
   public Long getId() {
-    return id;
+    return bookId;
   }
 
   public String getTitle() {
@@ -77,7 +78,7 @@ public class Favorite {
 
   @Override
   public String toString() {
-    return "Favorite [id=" + id + ", title=" + title
+    return "Favorite [id=" + bookId + ", title=" + title
         + ", author=" + author + ", published=" + published
         + ", createdAt=" + createdAt + "]";
   }
