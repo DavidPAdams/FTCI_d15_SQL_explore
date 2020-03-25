@@ -9,14 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 public class Favorite {
 
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  @Column(name="book_id")
   private Long id;
   
   private String title;
@@ -26,10 +24,6 @@ public class Favorite {
   @Column
   @CreationTimestamp
   private Date createdAt;
-  
-  @Column
-  @UpdateTimestamp
-  private Date updatedAt;
 
   public Favorite() {}
 
@@ -65,10 +59,6 @@ public class Favorite {
     return createdAt;
   }
 
-  public Date getUpdatedAt() {
-    return updatedAt;
-  }
-
   public void setTitle(String title) {
     this.title = title;
   }
@@ -85,16 +75,11 @@ public class Favorite {
     this.createdAt = createdAt;
   }
 
-  public void setUpdatedAt(Date updatedAt) {
-    this.updatedAt = updatedAt;
-  }
-
   @Override
   public String toString() {
     return "Favorite [id=" + id + ", title=" + title
         + ", author=" + author + ", published=" + published
-        + ", createdAt=" + createdAt + ", updatedAt="
-        + updatedAt + "]";
+        + ", createdAt=" + createdAt + "]";
   }
   
 }

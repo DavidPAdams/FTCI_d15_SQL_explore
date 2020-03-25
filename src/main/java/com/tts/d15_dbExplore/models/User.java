@@ -9,14 +9,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
 
 @Entity
 public class User {
 
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  @Column(name="user_id")
   private Long id;
   
   private String firstName;
@@ -26,10 +24,6 @@ public class User {
   @Column
   @CreationTimestamp
   private Date createdAt;
-  
-  @Column
-  @UpdateTimestamp
-  private Date updatedAt;
 
   public User() {}
 
@@ -65,10 +59,6 @@ public class User {
     return createdAt;
   }
 
-  public Date getUpdatedAt() {
-    return updatedAt;
-  }
-
   public void setFirstName(String firstName) {
     this.firstName = firstName;
   }
@@ -85,16 +75,11 @@ public class User {
     this.createdAt = createdAt;
   }
 
-  public void setUpdatedAt(Date updatedAt) {
-    this.updatedAt = updatedAt;
-  }
-
   @Override
   public String toString() {
     return "User [id=" + id + ", firstName=" + firstName
         + ", lastName=" + lastName + ", age=" + age
-        + ", createdAt=" + createdAt + ", updatedAt="
-        + updatedAt + "]";
+        + ", createdAt=" + createdAt + "]";
   }
   
 }
