@@ -15,7 +15,8 @@ public class User {
 
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  private Long id;
+  @Column(name="user_id")
+  private Long userId;
   
   private String firstName;
   private String lastName;
@@ -40,7 +41,7 @@ public class User {
   }
 
   public Long getId() {
-    return id;
+    return userId;
   }
 
   public String getFirstName() {
@@ -77,7 +78,7 @@ public class User {
 
   @Override
   public String toString() {
-    return "User [id=" + id + ", firstName=" + firstName
+    return "User [id=" + userId + ", firstName=" + firstName
         + ", lastName=" + lastName + ", age=" + age
         + ", createdAt=" + createdAt + "]";
   }
