@@ -22,7 +22,6 @@ public class User {
   private String lastName;
   private Integer age;
   
-  @Column
   @CreationTimestamp
   private Date createdAt;
 
