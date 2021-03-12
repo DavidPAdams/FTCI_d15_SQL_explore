@@ -1,13 +1,13 @@
-package com.tts.d15_dbExplore;
+package com.dav.dbExploring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class D15DbExploreApplication {
+public class DbExploringApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(D15DbExploreApplication.class, args);
+		SpringApplication.run(DbExploringApplication.class, args);
 	}
 
 }

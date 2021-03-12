@@ -1,10 +1,10 @@
-package com.tts.d15_dbExplore;
+package com.dav.dbExploring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class D15DbExploreApplicationTests {
+class DbExploringApplicationTests {
 
 	@Test
 	void contextLoads() {

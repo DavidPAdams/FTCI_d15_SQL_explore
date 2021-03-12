@@ -8,10 +8,10 @@
 		<version>2.2.5.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tts</groupId>
-	<artifactId>d15_dbExplore</artifactId>
+	<groupId>com.dav</groupId>
+	<artifactId>dbExploring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>d15_dbExplore</name>
+	<name>dbExploring</name>
 	<description>Using SQL in H2 console</description>
 
 	<properties>

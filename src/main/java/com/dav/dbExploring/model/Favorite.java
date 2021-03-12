@@ -1,4 +1,4 @@
-package com.tts.d15_dbExplore.models;
+package com.dav.dbExploring.model;
 
 import java.util.Date;
 
